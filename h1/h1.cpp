@@ -7,16 +7,16 @@ using namespace std;
 
 
 void calcSum(int a, int b) {
-    cout << "calcSum: Summa = " << a + b << endl;
+    cout << "Summa = " << a + b << endl;
 }
 
 
 void calcDiv(int a, int b) {
     if (b == 0) {
-        cout << "calcDiv: Virhe - nollalla jako ei ole sallittua." << endl;
+        cout << "Virhe - nollalla jako ei ole sallittua." << endl;
     } else {
         float result = static_cast<float>(a) / b;
-        cout << "calcDiv: Osamäärä = " << fixed << setprecision(2) << result << endl;
+        cout << "Osamäärä = " << fixed << setprecision(2) << result << endl;
     }
 }
 
@@ -49,11 +49,11 @@ int main() {
 
    
     int summa = retSum(a, b);
-    cout << "retSum: Summa = " << summa << endl;
+    cout << "Summa = " << summa << endl;
 
     try {
         float result = retDiv(a, b);
-        cout << "retDiv: " << a << " / " << b << " = " << fixed << setprecision(2) << result << endl;
+        cout << "" << a << " / " << b << " = " << fixed << setprecision(2) << result << endl;
     } catch (runtime_error& e) {
         cout << "Error: " << e.what() << endl;
     }
