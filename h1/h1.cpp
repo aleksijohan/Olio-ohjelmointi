@@ -58,5 +58,10 @@ int main() {
         cout << "Error: " << e.what() << endl;
     }
 
+    std::cout << "Paina Enter sulkeaksesi ohjelman...";
+    std::cin.ignore(); // Tyhjentää puskurin
+    std::cin.get();    // Odottaa Enteriä
+
+
     return 0;
 }
