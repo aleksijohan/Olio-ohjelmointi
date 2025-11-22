@@ -2,65 +2,27 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build h1",
-            "type": "shell",
+            "type": "cppbuild",
+            "label": "Käännä h3a.exe",
             "command": "g++",
             "args": [
-                "-g",
                 "-std=c++17",
-                "-mconsole",
-                "main.cpp",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "*.cpp",
                 "-o",
-                "h1"
+                "h3a.exe"
             ],
-            "group": "build",
-            "problemMatcher": ["$gcc"],
-            "detail": "Kääntää h1-projektin",
             "options": {
-                "cwd": "${workspaceFolder}/h1"
-            }
-        },
-        {
-            "label": "Build h2a",
-            "type": "shell",
-            "command": "g++",
-            "args": [
-                "-g",
-                "-std=c++17",
-                "-mconsole",
-                "main.cpp",
-                "Car.cpp",
-                "Rectangle.cpp",
-                "Student.cpp",
-                "-o",
-                "h2a"
-            ],
-            "group": "build",
+                "cwd": "${workspaceFolder}"
+            },
             "problemMatcher": ["$gcc"],
-            "detail": "Kääntää h2a-projektin",
-            "options": {
-                "cwd": "${workspaceFolder}/h2a"
-            }
-        },
-        {
-            "label": "Build h2b",
-            "type": "shell",
-            "command": "g++",
-            "args": [
-                "-g",
-                "-std=c++17",
-                "-mconsole",
-                "main.cpp",
-                "Car.cpp",
-                "-o",
-                "h2b"
-            ],
-            "group": "build",
-            "problemMatcher": ["$gcc"],
-            "detail": "Kääntää h2b-projektin",
-            "options": {
-                "cwd": "${workspaceFolder}/h2b"
-            }
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Kääntää kaikki .cpp-tiedostot → h3a.exe"
         }
     ]
 }
