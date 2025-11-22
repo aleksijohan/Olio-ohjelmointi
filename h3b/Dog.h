@@ -6,5 +6,5 @@ public:
     Dog();
     ~Dog() override;
 
-    void callOut() const override;    // Ylikirjoitetaan kantaluokan metodi
+    void callOut() const override;    
 };

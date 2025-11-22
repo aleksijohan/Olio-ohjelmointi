@@ -15,6 +15,6 @@ int main() {
     chef2.makePasta();
     std::cout << "ItalianChef name: " << chef2.getName() << std::endl;
 
-    // Automaattiset oliot tuhoutuvat tässä kohtaa (stack scope päättyy)
+    
     return 0;
 }

@@ -10,16 +10,16 @@ int main() {
         Animal animal;
         animal.callOut();
         std::cout << std::endl;
-    } // ← animal tuhoutuu tässä
+    } 
 
     std::cout << "\n-------------------\n" << std::endl;
 
     {
         std::cout << "Luodaan Dog-olio:" << std::endl;
         Dog dog;
-        dog.callOut();                    // Tulostuu: Koira haukkuu!
+        dog.callOut();                    
         std::cout << std::endl;
-    } // ← dog tuhoutuu tässä (ensin Dog-destruktori, sitten Animal-destruktori)
+    } 
 
     std::cout << "\nOhjelma päättyy." << std::endl;
     return 0;
