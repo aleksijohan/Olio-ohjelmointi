@@ -3,16 +3,16 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "Käännä h3a.exe",
+            "label": "C/C++: g++ build all",
             "command": "g++",
             "args": [
-                "-std=c++17",
-                "-Wall",
-                "-Wextra",
-                "-pedantic",
-                "*.cpp",
+                "-g",  // Debug-moodi
+                "main.cpp",
+                "ClassA1.cpp",
+                "ClassA2.cpp",
+                "ClassB.cpp",
                 "-o",
-                "h3a.exe"
+                "output.exe"  // Vaihda .exe pois, jos ei Windows
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -21,8 +21,7 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
-            "detail": "Kääntää kaikki .cpp-tiedostot → h3a.exe"
+            }
         }
     ]
 }
