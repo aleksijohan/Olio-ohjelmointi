@@ -1,12 +1,13 @@
+#include "exampleclass.h"
+
 #include <QCoreApplication>
-#include "myclass.h"
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    MyClass obj;
-    obj.raiseMySignal();
+    ExampleClass objExampleClass;
+    objExampleClass.startToWait();
 
     return a.exec();
 }
